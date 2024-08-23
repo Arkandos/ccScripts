@@ -2,14 +2,15 @@
 
 local version = 0.1
 local dependencies = {"text"}
-local apiloader = require("apiloader")
-local text = require(apiloader.getApiDir()..".text")
+local apiloader = require(settings.get("apiloader.apiDir")..".apiloader")
+local text = require(settings.get("apiloader.apiDir")..".text")
 
 --- Prints all available peripherals
 local function list()
     local peripheralList = peripheral.getNames()
     text.list(peripheralList)
 end
+
 
 local function listMethods(name)
     local peripheralList = peripheral.getMethods(name)

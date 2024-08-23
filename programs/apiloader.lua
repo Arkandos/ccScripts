@@ -1,7 +1,7 @@
 --- Arkandos apiloader 3
 
-local version = 3.0
-
+local version = 3.1
+local args = {...}
 local apiDir = "api"
 local filelist = {}
 local loud = false  -- If true display all information as it is loaded
@@ -14,6 +14,18 @@ end
 -- Global functions
 local function getApiDir()
     return apiDir
+end
+
+local function config(mode)
+    if mode == "add" then
+        settings.define("apiloader.apiDir", {
+            description = "Directory that apiloader is located in",
+            default = apiDir,
+            type = "string"
+        })
+    elseif mode == "remove" then
+        settings.undefine("apiloader.apiDir")
+    end
 end
 
 -- Return version of api, if available
@@ -104,5 +116,12 @@ local function load(printToConsole)
 
 end
 
+-- Main
+local function main()
+    config(args[1])
+end
+
+main()
+
 -- Return all functions that should be accessible outside this file
-return { version = version, load = load }
+return { version = version, load = load, getApiDir = getApiDir, config = config }

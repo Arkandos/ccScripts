@@ -1,16 +1,10 @@
 -- Made utilizing ccpt by PentagonLP https://github.com/PentagonLP/ccpt
 -- All available local packages. Do not edit
 local packageList = {
-    apiloader = "https://raw.githubusercontent.com/Arkandos/ccScripts/main/packages/apiloader.ccpt",
-    addon = "https://raw.githubusercontent.com/Arkandos/ccScripts/main/packages/addon.ccpt",
-    clear = "https://raw.githubusercontent.com/Arkandos/ccScripts/main/packages/clear.ccpt",
-    clock = "https://raw.githubusercontent.com/Arkandos/ccScripts/main/packages/clock.ccpt",
-    file = "https://raw.githubusercontent.com/Arkandos/ccScripts/main/packages/file.ccpt",
-    monitor = "https://raw.githubusercontent.com/Arkandos/ccScripts/main/packages/monitor.ccpt",
-    text = "https://raw.githubusercontent.com/Arkandos/ccScripts/main/packages/text.ccpt"
+    apiInstaller = "https://raw.githubusercontent.com/Arkandos/ccScripts/main/programs/installers/apiInstaller.lua"
 }
 -- Packages to install
-local installList = {"apiloader", "clear", "clock", "file", "monitor", "text"}
+local installList = {"apiInstaller"}
 
 
 -- Install the ccpt package manager

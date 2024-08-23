@@ -76,6 +76,9 @@ local function packageInstall()
         iPrint("Installing "..key.." at "..value["path"])
         httpDownload(value["path"], value["url"])
     end
+
+    -- Setup config for apiloader
+    shell.run(fileList["apiloader"]["path"], "add")
 end
 
 -- For now, just reinstalls all packages. 
@@ -103,6 +106,8 @@ end
 -- Main
 local function main()
     local funcList = { install = packageInstall, update = packageUpdate, remove = packageRemove}
+    if args[1] == nil then args[1] = "install" end
+    
     funcList[args[1]]()
 end
 

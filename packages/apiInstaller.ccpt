@@ -3,7 +3,7 @@
     comment = "Script to install / uninstall Arkandos apis",
     author = "Arkandos",
     website = "https://github.com/Arkandos/ccScripts",
-    newestversion = "0.1",
+    newestversion = "0.2",
     dependencies = {
     },
     install = {
