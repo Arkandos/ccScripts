@@ -28,6 +28,6 @@ shell.run("ccpt upgrade")
 
 -- Install
 for key, value in pairs(installList) do
-    print("[Mass Installer] Installing ".. key)
-    shell.run("ccpt install "..key)
+    print("[Mass Installer] Installing ".. value)
+    shell.run("ccpt install "..value)
 end
