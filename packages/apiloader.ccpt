@@ -1,6 +1,6 @@
 {
     name = "Arkandos APILoader",
-    comment = "Simple way to load all modules in a file",
+    comment = "Simple way to load all modules in a directory",
     author = "Arkandos",
     website = "https://github.com/Arkandos/ccScripts",
     newestversion = "3.0",
@@ -8,6 +8,6 @@
     },
     install = {
         type = "script",
-        scripturl = ""
+        scripturl = "https://raw.githubusercontent.com/Arkandos/ccScripts/main/programs/apiloader.lua"
     }
 }

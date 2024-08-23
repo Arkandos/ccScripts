@@ -1,0 +1,13 @@
+{
+    name = "clock.lua",
+    comment = "Module for easier time manipulation",
+    author = "Arkandos",
+    website = "https://github.com/Arkandos/ccScripts",
+    newestversion = "0.1",
+    dependencies = {
+    },
+    install = {
+        type = "script",
+        scripturl = ""
+    }
+}

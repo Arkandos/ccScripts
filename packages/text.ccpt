@@ -1,0 +1,13 @@
+{
+    name = "text.lua",
+    comment = "Module to simplify text interactions on both terminals and monitors",
+    author = "Arkandos",
+    website = "https://github.com/Arkandos/ccScripts",
+    newestversion = "1.0",
+    dependencies = {
+    },
+    install = {
+        type = "script",
+        scripturl = ""
+    }
+}

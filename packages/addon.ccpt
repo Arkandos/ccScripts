@@ -1,0 +1,15 @@
+{
+    name = "addon.lua",
+    comment = "Module to interact with peripherals",
+    author = "Arkandos",
+    website = "https://github.com/Arkandos/ccScripts",
+    newestversion = "0.1",
+    dependencies = {
+        apiloader = "3.0",
+        text = "1.0"
+    },
+    install = {
+        type = "script",
+        scripturl = ""
+    }
+}

@@ -1,4 +1,4 @@
--- Module that simplifies the resetting of the terminal
+-- Module that simplifies the resetting of the terminal or monitor
 
 local version = 1.0
 

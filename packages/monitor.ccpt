@@ -1,0 +1,13 @@
+{
+    name = "monitor.lua",
+    comment = "Module that simplifies monitor manipulation",
+    author = "Arkandos",
+    website = "https://github.com/Arkandos/ccScripts",
+    newestversion = "0.1",
+    dependencies = {
+    },
+    install = {
+        type = "script",
+        scripturl = ""
+    }
+}

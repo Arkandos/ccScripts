@@ -1,0 +1,13 @@
+{
+    name = "file.lua",
+    comment = "Module that simplifies file management",
+    author = "Arkandos",
+    website = "https://github.com/Arkandos/ccScripts",
+    newestversion = "1.0",
+    dependencies = {
+    },
+    install = {
+        type = "script",
+        scripturl = ""
+    }
+}

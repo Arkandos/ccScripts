@@ -1,6 +1,6 @@
 --- Arkandos apiloader 3
 
-local _version = 3.0
+local version = 3.0
 
 local apiDir = "api"
 local filelist = {}
@@ -66,7 +66,7 @@ local function load(printToConsole)
 
     if printToConsole ~= nil then loud = printToConsole end
 
-    qprint("APILoader v.".. _version)
+    qprint("APILoader v.".. version)
     
     local filelist = fs.list(apiDir)
     if filelist == nil then -- If no files can be loaded in the chosen directory, end the program.
@@ -105,4 +105,4 @@ local function load(printToConsole)
 end
 
 -- Return all functions that should be accessible outside this file
-return { load = load }
+return { version = version, load = load }

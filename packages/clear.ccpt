@@ -1,0 +1,13 @@
+{
+    name = "clear.lua",
+    comment = "Module that simplifies the resetting of the terminal or monitor",
+    author = "Arkandos",
+    website = "https://github.com/Arkandos/ccScripts",
+    newestversion = "1.0",
+    dependencies = {
+    },
+    install = {
+        type = "script",
+        scripturl = ""
+    }
+}
